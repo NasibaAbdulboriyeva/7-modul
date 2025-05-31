@@ -1,4 +1,9 @@
 
+using ContactSystem.Application.Interfaces;
+using ContactSystem.Application.Services;
+using ContactSystem.Infrastructure.Persistence.Repositories;
+using ContactSystem.Server.Configurations;
+
 namespace Contact.Api
 {
     public class Program
@@ -13,7 +18,10 @@ namespace Contact.Api
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.ConfigureDB();
 
+            builder.Services.AddScoped<IContactRepository, ContactRepository>();
+            builder.Services.AddScoped<IContactService, ContactService>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
