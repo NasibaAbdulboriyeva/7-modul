@@ -1,4 +1,4 @@
-﻿using ContactSystem.Application.Dtos;
+﻿using ContactSystem.Application.Dtos.ContactDtos;
 using ContactSystem.Domain.Entities;
 
 

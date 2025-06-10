@@ -1,8 +1,7 @@
-﻿namespace ContactSystem.Application.Dtos;
+﻿namespace ContactSystem.Application.Dtos.ContactDtos;
 
-public class ContactDto
+public class ContactCreateDto
 {
-    public long ContactId { get; set; }
     public string Name { get; set; }
     public string Email { get; set; }
     public string Address { get; set; }

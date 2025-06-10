@@ -1,6 +1,6 @@
-﻿using ContactSystem.Application.Dtos;
+﻿using ContactSystem.Application.Dtos.ContactDtos;
 
-namespace ContactSystem.Application.Services;
+namespace ContactSystem.Application.Services.ContactServices;
 
 public interface IContactService
 {

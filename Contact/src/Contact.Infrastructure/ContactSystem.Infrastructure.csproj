@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Contact.Application\ContactSystem.Application.csproj" />
+    <ProjectReference Include="..\ContactSystem.Core\ContactSystem.Core.csproj" />
   </ItemGroup>
 
 </Project>

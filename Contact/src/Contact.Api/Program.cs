@@ -1,6 +1,6 @@
 
 using ContactSystem.Application.Interfaces;
-using ContactSystem.Application.Services;
+using ContactSystem.Application.Services.ContactServices;
 using ContactSystem.Infrastructure.Persistence.Repositories;
 using ContactSystem.Server.Configurations;
 

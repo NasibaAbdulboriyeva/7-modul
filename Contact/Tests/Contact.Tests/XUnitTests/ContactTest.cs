@@ -37,7 +37,8 @@ public class ContactTest
         var contactId = 1L;
         _mockRepository.Setup(x => x.SelectByIdAsync(contactId)).ReturnsAsync((Contact)null);
         //Act & ASsert
-        await Assert.ThrowsAsync<Exception>(()=>_contactService.DeleteAsync(contactId));
+        await Assert.ThrowsAsync<Exception>(() => _contactService.DeleteAsync(contactId));
 
     }
 }
+

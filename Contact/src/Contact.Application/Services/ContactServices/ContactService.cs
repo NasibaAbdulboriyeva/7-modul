@@ -1,8 +1,6 @@
-﻿
-using ContactSystem.Application.Dtos;
+﻿using ContactSystem.Application.Dtos.ContactDtos;
 using ContactSystem.Application.Interfaces;
-using ContactSystem.Application.Services;
-
+using ContactSystem.Application.Services.ContactServices;
 public class ContactService : IContactService
 {
     private readonly IContactRepository _contactRepository;
