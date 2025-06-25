@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music CRUD</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="prepare.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="card p-4 shadow-lg mt-5">
+      <h2 class="text-center mb-4">🎵 Music CRUD</h2>
+      <div class="row g-2">
+        <div class="col-md-3">
+          <input type="text" id="title" class="form-control" placeholder="Title">
+        </div>
+        <div class="col-md-3">
+          <input type="text" id="artist" class="form-control" placeholder="Artist">
+        </div>
+        <div class="col-md-3">
+          <input type="text" id="genre" class="form-control" placeholder="Genre">
+        </div>
+        <div class="col-md-3">
+          <input type="text" id="searchTitle" class="form-control" placeholder="Search by Title">
+        </div>
+      </div>
+      <div class="mt-3 d-flex justify-content-center gap-2 flex-wrap">
+        <button class="btn btn-success" onclick="addMusic()">Add</button>
+        <button class="btn btn-warning" onclick="updateMusic()">Update</button>
+        <button class="btn btn-danger" onclick="deleteMusic()">Delete</button>
+        <button class="btn btn-info text-white" onclick="getMusicByTitle()">Get</button>
+      </div>
+    </div>
+
+    <div class="card mt-4 p-3 shadow-lg">
+      <h4>Music List</h4>
+      <table class="table table-striped table-hover mt-3">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Title</th>
+            <th>Artist</th>
+            <th>Genre</th>
+          </tr>
+        </thead>
+        <tbody id="musicTableBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="prepare.js"></script>
+</body>
+</html>

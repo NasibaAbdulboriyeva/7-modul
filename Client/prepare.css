@@ -1,0 +1,23 @@
+body {
+  background: linear-gradient(to right, #3d3caf, #eeedec);
+  color: rgb(175, 134, 168);
+  min-height: 100vh;
+  padding-top: 40px;
+}
+.card {
+  background-color: rgb(188, 168, 226);
+  border:
+  1px solid rgb(175, 134, 168);
+  border-radius: 15px;
+}
+.form-control, .btn {
+  border-radius: 10px;
+}
+.table {
+  background-color: rgb(4, 74, 86);
+  color: rgb(151, 29, 29);
+}
+.table th {
+  background-color: #79b3dc;
+  color: rgb(255, 255, 255);
+}
